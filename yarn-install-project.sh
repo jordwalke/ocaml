@@ -10,5 +10,5 @@ fi
 set -e
 set -x
 ./configure -no-cfi -prefix $(pwd)
-make -j world.opt
+make world.opt
 make install
