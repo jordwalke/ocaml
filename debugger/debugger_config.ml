@@ -71,7 +71,7 @@ let checkpoint_big_step = ref (~~ "10000")
 let checkpoint_small_step = ref (~~ "1000")
 
 (* Maximum number of checkpoints. *)
-let checkpoint_max_count = ref 15
+let checkpoint_max_count = ref 500
 
 (* Whether to keep checkpoints or not. *)
 let make_checkpoints = ref
