@@ -7,8 +7,10 @@ then
     echo "**************************************************************"
     exit 1
 fi
+echo "Configuring the OCaml compiler to use the CC environment variable"
+echo "which is currently set to ($CC) - and defaults to gcc."
 set -e
 set -x
-./configure -no-cfi -prefix $(pwd)
+./configure -cc "$CC" -no-cfi -prefix $(pwd)
 make world.opt
 make install
